@@ -1,0 +1,12 @@
+n=input() 
+s=""
+top=-1
+for i in range(0,len(n)):
+    if(top!=-1):
+        if(s[top]!=n[i] or n[i] not in s):
+            top=top+1
+            s=s+n[i] 
+    else:
+        s=s+n[i]
+        top=top+1
+print(s)
