@@ -1,0 +1,11 @@
+n=list(input())
+l2=[]
+s='aeiouAEIOU'
+for i in range(len(n)):
+    if n[i] in s:
+        n[i+1]="*" 
+        n[i-1]="*" 
+for i in range(len(n)):
+    if n[i]!="*":
+        l2.append(n[i])
+print("".join(l2))
